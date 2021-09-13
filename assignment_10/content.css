@@ -1,0 +1,41 @@
+body{
+    background-color: #000;
+}
+#navbar{
+    margin-top: 0px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0px 2px 5px #00F;
+}
+#navbar a{
+    color: #000;
+    line-height: 46.5px;
+}
+#navbar #active-nav{
+    color: #F00;
+}
+.imgs{
+    float: left;
+    margin-right: 70px;
+    width: 339px;
+    height: 339px;
+}
+#footer{
+    margin-top: 50px;
+}
+h2{
+    color: #FFF;
+    text-align: center;
+}
+p{
+    color: #FFF;
+}
+hr{
+    margin-top: 30px;
+}
+ul{
+    color: #FFF;
+}
+span{
+    font-size: 1.3em;
+}

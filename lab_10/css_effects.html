@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+
+    <head>
+
+        <title>Squirrels Effects</title>
+
+        <style>
+            #wrapper{
+                width: 600px;
+                height: 600px;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                margin-top: 50px;
+            }
+            #squirrel-1{
+                height: 400px;
+                width: 600px;
+                position: absolute;
+                top: 200px;
+                z-index: 2;
+                transition: all 1s ease 2s;
+            }
+            #squirrel-2{
+                height: 500px;
+                width: 600px;
+                position: absolute;
+                top: 100px;
+                z-index: 1;
+                transition: all 1s ease 1s;
+            }
+            #squirrel-3{
+                height: 600px;
+                width: 600px;
+                z-index: 0;
+                transition: all 1s;
+            }
+            #wrapper:hover #squirrel-1{
+                transition: all 1s;
+                transform: translateX(600px);
+            }
+            #wrapper:hover #squirrel-2{
+                transition: all 1s ease 1s;
+                transform: translateX(-600px);
+            }
+            #wrapper:hover #squirrel-3{
+                transition: all 1s ease 2s;
+                transform: scale(3);
+            }
+            #overlay{
+                transition: all 1s;
+                color: #FFF;
+                text-align: center;
+                position: absolute;
+                top: 350px;
+                left: 250px;
+                transform: scale(3);
+                opacity: 0.0;
+            }
+            #wrapper:hover #overlay{
+                transition: all 1s ease 3s;
+                transform: scale(2);
+                opacity: 1.0;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <img id="squirrel-1" src="img/squirrel-1.jpg" alt="squirrel-1">
+            <img id="squirrel-2" src="img/squirrel-2.jpg" alt="squirrel-2">
+            <img id="squirrel-3" src="img/squirrel-3.jpg" alt="squirrel-3">
+            <p id="overlay">Fight On!</p>
+        </div>
+
+    </body>
+
+</html>

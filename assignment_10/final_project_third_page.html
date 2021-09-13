@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>CME-Algorithms</title>
+        <meta name="description" content="This page contains common and useful algorithms. For now it only includes the 3 most common search algorithms: Binary Search, DFS, and BFS. With analysis on all 3 of them and video explanations for BFS and DFS. More algorithms to come!">
+
+        <link href="main.css" rel="stylesheet">
+        <link href="content.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <style>
+            #Search-Intro{
+                margin-top: 80px;
+                margin-left: 10px;
+            }
+            #Binary-Search{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            #Binary-Search-img{
+                float: left;
+                margin-right: 70px;
+                width: 520px;
+                height: 339px;
+            }
+            #DFS{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            #DFS .analysis{
+                width: 650px;
+                margin-right: 30px;
+            }
+            #BFS{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            #BFS .analysis{
+                width: 650px;
+                margin-right: 30px;
+            }
+            .analysis{
+                float: left;
+            }
+            .videos{
+                float: left;
+            }
+            li{
+                margin-top: 30px;
+            }
+            h1{
+                color: #FFF;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="navbar">
+            <a id="name">Muyang Ye</a>
+            <a href="final_project_homepage.html">Home</a>
+            <a href="final_project_second_page.html">Data Structures</a>
+            <a href="final_project_third_page.html" id="active-nav">Algorithms</a>
+            <a href="final_project_fourth_page.html">Others</a>
+            <a href="final_project_contact_page.html">Contact</a>
+
+            <div class="clearfloat"></div> <!-- .clearfloat-->
+        </div> <!-- #navbar-->
+
+        <div id="Search-Intro">
+            <h1>Search</h1>
+            <p>After learning data structures. The first question is: Is there an efficient way to retrieve a specific datum stored in them without having to go through every data? Search algorithms are designed to check for an element or retrieve an element from any data structure where it is stored. In computer science, when searching for data, the difference between a fast application and a slower one often lies in the use of the proper search algorithm. In this section of my blog, I will introduce to you the 3 most common search algorithms: Binary Search, Depth-First Search, and Breadth-First Search.</p>
+        </div> <!-- #search-intro-->
+
+        <hr>
+
+        <div id="Binary-Search">
+
+            <h2>Binary Search</h2>
+            <p>Given an array of n elements, how can you find a specific element's location? Of course you need to iterate through the entire array because the element can be anywhere in the array. This is called Linear Search with time complexity O(n). However, what if the arry is sorted? Is there a more efficient search algorithm? Binary Search is defined as follows: Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. Each time we set the middle mid=(low+high)/2. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. This narrowing process is done by setting high=mid-1 or setting low=mid+1. Repeatedly check until the value is found or the interval is empty.</p>
+            <img id="Binary-Search-img" src="img/Binary-Search.png" alt="Binary Search">
+
+            <div class="analysis">
+                <p><span>Analysis:</span></p>
+                <ul>
+                    <li>If the input array is not sorted, Binary Search doesn't work</li>
+                    <li>Time Complexity: O(log<sub>2</sub>(n)). Actually the base doesn't matter since we can change the base of a logarithm</li>
+                    <li>Why: Because we can only divide divide the array by a half log<sub>2</sub>(n) times</li>
+                    <li>Binary Search is trivial, the remark is we should think how can we utilize a feature of the input, in this case sorted</li>
+                </ul>
+            </div> <!-- .analysis-->
+            
+        </div> <!-- #Binary-Search-->
+        <div class="clearfloat"></div> <!-- .clearfloat-->
+
+        <hr>
+
+        <div id="DFS">
+
+            <h2>Depth-First Search</h2>
+            <p>Depth-First Search is a graph traversal algorithm which will follow a path from the starting node to an ending node, then another path from start to end until all the nodes are visited. DFS starts the traversal from the root node and visits nodes as far as possible from the root node. This method is implemented using a stack data structure and generally requires less memory than BFS.</p>
+            <img class="imgs" src="img/DFS.png" alt="Depth-First Search">
+
+            <div class="analysis">
+                <p><span>Analysis:</span></p>
+                <ul>
+                    <li>Why DFS searches farthest? Because stacks follow the LIFO principle</li>
+                    <li>Time Complexity: O(V+E) where V is #vertices and E is #edges</li>
+                    <li>When to Use DFS:
+                        <ul>
+                            <li>Searching vertices that are away from the source</li>
+                            <li>Suitable for games/puzzles because once we find a solution (win), we stop</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- .analysis-->
+
+            <div class="videos">
+                <p><span>DFS is hard! Here is a video explanation:</span></p>
+                <iframe
+                    width="395"
+                    height="260" 
+                    src="https://www.youtube.com/embed/PMMc4VsIacU"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div> <!-- .videos-->
+
+        </div> <!-- #BFS-->
+        <div class="clearfloat"></div> <!-- .clearfloat-->
+
+        <hr>
+
+        <div id="BFS">
+
+            <h2>Breadth-First Search</h2>
+            <p>Breadth-First Search proceeds level by level visiting all nodes on one level before moving on to the next. BFS starts traversal from the root node and visits nodes in a level by level manner. It is usually implemented using a queue structure and generally requires more memory than DFS.</p>
+            <img class="imgs" src="img/BFS.png" alt="Breadth-First Search">
+
+            <div class="analysis">
+                <p><span>Analysis:</span></p>
+                <ul>
+                    <li>Why BFS searches levelwise? Because queues follow the FIFO principle</li>
+                    <li>Time Complexity: O(V+E) where V is #vertices and E is #edges</li>
+                    <li>When to Use BFS:
+                        <ul>
+                            <li>Searching vertices that are closer to the source</li>
+                            <li>BFS is optimal for finding the shortest distance</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- .analysis-->
+
+            <div class="videos">
+                <p><span>BFS is hard! Here is a video explanation:</span></p>
+                <iframe
+                    width="395"
+                    height="260" 
+                    src="https://www.youtube.com/embed/xlVX7dXLS64"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div> <!-- .videos-->
+
+        </div> <!-- #DFS-->
+        <div class="clearfloat"></div> <!-- .clearfloat-->
+
+        <hr>
+
+        <h2>......</h2>
+
+        <div id="footer">
+            Welcome to my blog Coding Made Easy! I will keep updating and introducing elementary data structures and algorithms to you. Hope it helps!
+        </div> <!-- #footer -->
+
+    </body>
+
+</html>

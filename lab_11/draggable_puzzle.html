@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Squirrel Puzzle</title>
+
+        <style>
+            img{
+                height: 200px;
+                width: 300px;
+                float: left;
+            }
+            h1{
+                text-align: center;
+            }
+            div{
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+            .clearfloat{
+                clear: both;
+            }
+            #r1c2{
+                position: relative;
+                bottom: 15px;
+                right: 20px;
+                box-shadow: 5px 5px 5px lightgrey;
+            }
+            #r1c3
+            {
+                position: relative;
+                bottom: 30px;
+                left: 40px;
+                box-shadow: -10px 10px 5px lightgrey;
+            }
+            #r2c1{
+                position: relative;
+                right: 40px;
+                box-shadow: 10px 0px 5px lightgrey;
+            }
+            #r3c2{
+                position: relative;
+                top: 30px;
+                left: 40px;
+                box-shadow: -10px -10px 5px lightgrey;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Squirrel Puzzle</h1>
+
+        <div>
+            <img src="../lab_07/img/11.jpg" alt="11" class="draggable">
+            <img id="r1c2" src="../lab_07/img/12.jpg" alt="12" class="draggable">
+            <img id="r1c3" src="../lab_07/img/13.jpg" alt="13" class="draggable">
+
+            <div class="clearfloat"></div>
+            <img id="r2c1" src="../lab_07/img/21.jpg" alt="21" class="draggable">
+            <img src="../lab_07/img/22.jpg" alt="22" class="draggable">
+            <img src="../lab_07/img/23.jpg" alt="23" class="draggable">
+
+            <div class="clearfloat"></div>
+
+            <img src="../lab_07/img/31.jpg" alt="31" class="draggable">
+            <img id="r3c2" src="../lab_07/img/32.jpg" alt="32" class="draggable">
+            <img src="../lab_07/img/33.jpg" alt="33" class="draggable">
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="draggabilly.pkgd.min.js"></script>
+
+        <script>
+            var $draggable = $('.draggable').draggabilly({
+                // options...
+            })
+        </script>
+
+    </body>
+
+</html>

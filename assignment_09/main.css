@@ -1,0 +1,40 @@
+body{
+    margin: 0px;
+}
+#navbar{
+    z-index: 9999;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+}
+#navbar a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 43px;
+    display: block;
+    line-height: 50px;
+    float: left;
+    color: #FFF;
+    font-size: 1.5em;
+    font-family: "New Tegomin";
+}
+#navbar a:hover{
+    opacity: 0.5;
+}
+#navbar #active-nav{
+    opacity: 0.5;
+}
+#name{
+    margin-right: 550px;
+}
+.clearfloat{
+    clear: both;
+}
+#footer{
+    color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 310px;
+    background-color: grey;
+}

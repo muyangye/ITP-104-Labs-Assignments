@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Muyang Ye's Interest</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&display=swap" rel="stylesheet">
+
+        <link href="main.css" rel="stylesheet">
+
+        <style>
+            
+            #content{
+                width:800px;
+                margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+                background-position: center;
+                background-color: #000;
+                color: #FFF;
+                float: right;
+                padding: 20px;
+            }
+            .headings{
+                color: #0FF;
+                font-family: 'Akaya Telivigala', cursive;
+            }
+            .hyperlinks{
+                color: violet;
+            }
+            #p1_image{
+                float: right;
+                width: 300px;
+                height: auto;
+            }
+            .p2_images{
+                float: left;
+                width: 300px;
+                height: auto;
+            }
+            .p3_images{
+                float: right;
+                height: 200px;
+                width: auto;
+            }
+            #favorite-genre{
+                color: #0F0;
+            }
+            .people{
+                color: #F00;
+            }
+            #sidebar{
+                color: #00F;
+                background-color: lightgrey;
+                width: 200px;
+                float: right;
+                padding: 10px;
+            }
+            .sidebar_images{
+                width: 160px;
+                height: auto;
+            }
+            .sidebar_songs{
+                visibility: hidden;
+                width: 150px;
+                text-align: center;
+                font-style: italic;
+                padding-bottom: 20px;
+            }
+            .sidebar_images:hover + .sidebar_songs{
+                visibility: visible;
+            }
+            #nav ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            #nav li{
+                position: relative;
+            }
+            #nav li:hover ul{
+                display: block;
+            }
+            #nav ul ul{
+                background-color: #FF0;
+                position: absolute;
+                display: none;
+                top: 50px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>EDM</h1>
+        </div> <!-- #header -->
+
+        <div id="navbar">
+            <div id="nav">
+
+                <ul>
+                    <li>
+                        <a href="final_interests_page.html" id="active-nav">Home</a>
+                        <ul>
+                            <li><a href="final_interests_page.html#what_section">What is EDM?</a></li>
+                            <li><a href="final_interests_page.html#genres_section">Genres of EDM</a></li>
+                            <li><a href="final_interests_page.html#people_section">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+
+                <div class="clearfloat"></div>
+                
+            </div> <!-- #nav -->
+        </div> <!-- #navbar -->
+
+        <div id="wrapper">
+
+            <div id="content">
+
+                <h2 id="what_section" class="headings">What is EDM?</h2>
+                <img id="p1_image" src="files/edm2.jpg" alt="EDM">
+                <p>Electronic dance music (EDM), also known as dance music, club music, or simply dance, is a broad range of percussive electronic music genres made largely for nightclubs, raves, and festivals. It is generally produced for playback by DJs who create seamless selections of tracks, called a mix, by segueing from one recording to another. EDM producers also perform their music live in a concert or festival setting in what is sometimes called a live PA.</p>
+                <p>In electronic music, you are not limited to a live recording situation, so you have complete creative control over every second of a song. You can place a kick drum exactly on the beat at whatever tempo you want. Synth not fizzy enough? You can add something on top. Vocal sample sucks? Just replace it with one of the thousands in your sample library. As a result, EDM tunes sound inherently bigger and cleaner because there is more control in the process, from the initial idea to the final product.</p>
+
+                <hr>
+
+                <h2 id="genres_section" class="headings">Genres of EDM</h2>
+                <img class="p2_images" src="files/genres_of_edm.jpg" alt="Genres of EDM">
+                <p>In reality, there are so many genres and sub-genres of EDM it would be nearly impossible to cover them all. <a class="hyperlinks" href="https://www.beatport.com" target="_blank">Beatport</a> is the industry leader for downloading Electronic Dance Music and they list about 50 subgenres so that is a rough gauge of how many current popular ones there are. The 10 most popular EDM genres are House, Techno, Trance, Dubstep, Drum&Bass, UK Garage, Hard Dance, Moobathton, Breakbeat, and Downstep, respectively.</p>
+                <img class="p2_images" src="files/future_bass.jpg" alt="Future Bass">
+                <p>My personal favorite genre is <span id="favorite-genre">Future Bass</span>, a sub-genre under Drum&Bass originated in the 2010s. It can be described as music that "takes the ecstatic drops of dubstep or trap, but provides a warm bounce rather than a lumbering bruteness. Basslines are provided by harsh, detuned synths that buzz and purr instead of gulp and whomp." It was popularised in the mid to late-2010s by artists such as Illenium and San Holo. 2016 was seen as the breakout year for the genre. Indeed, for me, 2016 was the single year with most highest quality EDMs.</p>
+
+                <hr>
+
+                <h2 id="people_section" class="headings">People</h2>
+                <img class="p3_images" src="files/martix_garrix.jpg" alt="Martin Garrix">
+                <p>People who produce and play EDM are called DJ (disc jockey). DJ is a person who plays recorded music for an audience. DJs use audio equipment that can play at least two sources of recorded music simultaneously and mix them together to create seamless transitions between recordings and develop unique mixes of songs. Often, this involves aligning the beats of the music sources so their rhythms and tempos do not clash when played together and to enable a smooth transition from one song to another. DJs often use specialized DJ mixers, small audio mixers with crossfader and cue functions to blend or transition from one song to another.</p>
+                <img class="p3_images" src="files/avicii.jpg" alt="Avicii">
+                <p>The DJ Magazine (DJ Mag) ranks <a class="hyperlinks" href="https://djmag.com/top100djs" target="_blank">top 100 DJs</a> annually. Although the ranking has some merits, many people aren't satisfied by it and have their own rankings. Two of my favorite DJs are <span class="people">Avicii (Tim Bergling)</span> and <span class="people">Martin Garrix</span>. At the age of 16, Bergling began posting his remixes on electronic music forums, which led to his first record deal. He rose to prominence in 2011 with his single "Levels". His debut studio album, True (2013), peaked in the top ten in more than fifteen countries and topped international charts; the lead single, "Wake Me Up", topped most music markets in Europe and reached number four in the United States. In 2015, Bergling released his second studio album, Stories, and in 2017 he released an EP, Avīci (01). His catalog also included the singles "The Days", "The Nights", "Waiting for Love", and "Without You". Bergling was nominated for a Grammy Award for his work on "Sunshine" with David Guetta in 2012 and "Levels" in 2013. Several music publications credit Bergling as among the DJs who ushered electronic music into Top 40 radio in the early 2010s. Bergling retired from touring in 2016 due to health problems, having suffered from stress and poor mental health for several years. On 20 April 2018, he committed suicide in Muscat, Oman. His third album, Tim, was released posthumously in 2019.</p>  
+            
+            </div> <!-- #content -->
+
+            <div id="sidebar">
+
+                <h2>Latest Songs</h2>
+
+                <img class="sidebar_images" src="files/sidebar1.jpg" alt="Safe With Me">
+                <p class="sidebar_songs">Safe With Me, Gryffin</p>
+                
+                <img class="sidebar_images" src="files/sidebar2.jpg" alt="I Want It All">
+                <p class="sidebar_songs">I Want It All, Lucas & Steve</p>
+
+                <img class="sidebar_images" src="files/sidebar3.jpg" alt="One More Round">
+                <p class="sidebar_songs">One More Round, KSHMR</p>
+
+                <img class="sidebar_images" src="files/sidebar4.jpg" alt="Funny">
+                <p class="sidebar_songs">Funny, Zedd</p>
+
+                <img class="sidebar_images" src="files/sidebar5.jpg" alt="Higher Ground">
+                <p class="sidebar_songs">Higher Ground, Martin Garrix</p>
+
+            </div> <!-- #sidebar -->
+
+            <div class="clearfloat"></div>
+
+        </div> <!-- #wrapper -->
+
+        <div id="footer">
+            <p>Muyang Ye &copy; 2021</p>
+        </div> <!-- #footer -->
+
+    </body>
+
+</html>

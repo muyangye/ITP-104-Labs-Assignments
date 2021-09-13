@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Gallery</title>
+
+        <link href="main.css" rel="stylesheet">
+
+        <style>
+
+            body{
+                background-color: lightblue;
+            }
+            #header{
+                background-image: url('files/gallery_head.jpg');
+                height: 300px;
+                line-height: 300px;
+            }
+            .blocks{
+                background-color: #FFF;
+                border: 5px solid #000;
+                margin: 20px 0px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+            }
+            .blocks:hover .captions{
+                display: block;
+            }
+            .captions{
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #FFF;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                text-align: center;
+                padding-top: 74px;
+                display: none;
+            }
+            #caption-highest{
+                padding-top: 200px;
+            }
+            #caption-high-1{
+                padding-top: 80px;
+            }
+            #caption-high-2{
+                padding-top: 80px;
+            }
+            #caption-high-3{
+                padding-top: 80px;
+            }
+            #caption-medium-1{
+                padding-top: 90px;
+            }
+            #caption-medium-2{
+                padding-top: 90px;
+            }
+            #block-1{
+                width: 400px;
+                height: 200px;
+                margin-top: 40px;
+                margin-left: 30px;
+                margin-right: 220px;
+            }
+            #block-2{
+                height: 200px;
+                width: 400px;
+                margin-top: 40px;
+            }
+            #block-3{
+                height: 400px;
+                width: 600px;
+                margin-left: 30px;
+                margin-right: 40px;
+            }
+            #block-4{
+                height: 175px;
+                width: 175px;
+                margin-right: 20px;
+            }
+            #block-5{
+                height: 175px;
+                width: 175px;
+            }
+            #block-6{
+                height: 175px;
+                width: 175px;
+                margin-right: 20px;
+            }
+            #block-7{
+                height: 175px;
+                width: 175px;
+            }
+            #block-8{
+                height: 200px;
+                width: 190px;
+                margin-left: 75px;
+                margin-right: 175px;
+            }
+            #block-9{
+                height: 200px;
+                width: 190px;
+                margin-right: 175px;
+            }
+            #block-10{
+                height: 200px;
+                width: 190px;
+            }
+            #photo1{
+                width: 100%;
+                height: auto;
+            }
+            #photo2{
+                width: 100%;
+                height: auto;
+            }
+            #photo3{
+                height: auto;
+                width: 100%;
+            }
+            #photo4{
+                width: auto;
+                height: 100%;
+            }
+            #photo5{
+                width: auto;
+                height: 100%;
+            }
+            #photo6{
+                width: auto;
+                height: 100%;
+            }
+            #photo7{
+                width: auto;
+                height: 100%;
+            }
+            #photo8{
+                width: auto;
+                height: 100%;
+            }
+            #photo9{
+                width: auto;
+                height: 100%;
+            }
+            #photo10{
+                width: auto;
+                height: 100%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>Festivals</h1>
+        </div> <!-- #header -->
+
+        <div id="navbar">
+            <div id="nav">
+                <a href="final_interests_page.html">Home</a>
+                <a href="gallley.html" id="active-nav">Gallery</a>
+                <div class="clearfloat"></div>
+            </div> <!-- #nav -->
+        </div> <!-- #navbar -->
+
+        <div id="wrapper">
+
+            <div class="blocks" id="block-1">
+                <img id="photo1" class="photos" src="files/EDC.jpg" alt="Electric Daisy Carnival">
+                <div id="caption-medium-1" class="captions">Electric Daisy Carnival: Las Vegas, United States</div>
+            </div> <!-- #block-1 -->
+
+            <div class="blocks" id="block-2">
+                <img id="photo2" class="photos" src="files/ultra.jpg" alt="Ultra Music Festival">
+                <div id="caption-medium-2" class="captions">Ultra Music Festival: Miami, Uniteed States</div>
+            </div> <!-- #block-2 -->
+
+            <div class="clearfloat"></div>
+
+            <div class="blocks" id="block-3">
+                <img id="photo3" class="photos" src="files/tomorrowland.jpg" alt="Tomorrowland">
+                <div id="caption-highest" class="captions">Tomorrowland: Boom, Belgium</div>
+            </div> <!-- #block-3 -->
+
+            <div class="blocks" id="block-4">
+                <img id="photo4" class="photos" src="files/ozora.jpg" alt="Ozora">
+                <div class="captions">Ozora: Hungary</div>
+            </div> <!-- #block-4 -->
+
+            <div class="blocks" id="block-5">
+                <img id="photo5" class="photos" src="files/sunburn.jpg" alt="Ozora">
+                <div class="captions">Sunburn: Goa, India</div>
+            </div> <!-- #block-5 -->
+
+            <div class="blocks" id="block-6">
+                <img id="photo6" class="photos" src="files/global_gathering.jpg" alt="Global Gathering">
+                <div class="captions">Global Gatheing: England</div>
+            </div> <!-- #block-6 -->
+
+            <div class="blocks" id="block-7">
+                <img id="photo7" class="photos" src="files/stereosonic.jpg" alt="Stereosonic">
+                <div class="captions">Stereosonic: Australia</div>
+            </div> <!-- #block-7 -->
+
+            <div class="clearfloat"></div>
+
+            <div class="blocks" id="block-8">
+                <img id="photo8" class="photos" src="files/sensation.jpg" alt="Sensation">
+                <div id="caption-high-1" class="captions">Sensation: Amsterdam, Netherlands</div>
+            </div> <!-- #block-8 -->
+
+            <div class="blocks" id="block-9">
+                <img id="photo9" class="photos" src="files/storm.jpg" alt="Storm Festival">
+                <div id="caption-high-2" class="captions">Storm Festival: Shanghai, China</div>
+            </div> <!-- #block-9 -->
+
+            <div class="blocks" id="block-10">
+                <img id="photo10" class="photos" src="files/electric_zoo.jpg" alt="Electric Zoo">
+                <div id="caption-high-3" class="captions">Electric Zoo: New York, United States</div>
+            </div> <!-- #block-10 -->
+
+            <div class="clearfloat"></div>
+
+        </div> <!-- #container -->
+
+        <div id="footer">
+            <p>Muyang Ye &copy; 2021</p>
+        </div> <!-- #footer -->
+
+    </body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="I would like to hear from you! Feel free to ask me to add more content or discuss anything you are intersted!">
+
+        <title>Contact Me!</title>
+
+        <link href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <style>
+            #img-container{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                background-image: url("img/home_background.jpg");
+                background-size: cover;
+                background-position: center;
+                z-index: -20;
+                overflow: hidden;
+            }
+            #navbar{
+                margin-top: 15px;
+            }
+            #contact{
+                width: 800px;
+                height: 500px;
+                border: 2px dotted #FFF;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 130px;
+                background-color: gold;
+            }
+            form{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .form-row{
+                margin: 10px 10px;
+            }
+            .left-col{
+                width: 380px;
+                float: left;
+            }
+            #submit-button{
+                margin-left: 280px;
+                margin-right: 20px;
+                color: #FFF;
+                background-color: #000;
+                cursor: pointer;
+            }
+            #reset-button{
+                cursor: pointer;
+            }
+            button{
+                margin-top: 30px;
+                width: 100px;
+                height: 50px;
+            }
+            #footer{
+                margin-top: 70px;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="img-container"></div>
+
+        <div id="navbar">
+            <a id="name">Muyang Ye</a>
+            <a href="final_project_homepage.html">Home</a>
+            <a href="final_project_second_page.html">Data Structures</a>
+            <a href="final_project_third_page.html">Algorithms</a>
+            <a href="final_project_fourth_page.html">Others</a>
+            <a href="final_project_contact_page.html" id="active-nav">Contact</a>
+
+            <div class="clearfloat"></div> <!-- .clearfloat-->
+        </div> <!-- #navbar-->
+
+        <div id="contact">
+            <h2>For further questions, email <a href="mailto:muyangye@usc.edu">muyangye@usc.edu</a></h2>
+            <form action="confirmation.html">
+
+                <div class="form-row">
+                    <div class="left-col">
+                        How Helpful Is This Blog?
+                    </div> <!-- .left-col-->
+                    <label>
+                        <input type="radio" name="helpfulness">Unhelpful
+                    </label>
+                    <label>
+                        <input type="radio" name="helpfulness">So So
+                    </label>
+                    <label>
+                        <input type="radio" name="helpfulness">Helpful
+                    </label>
+                    <label>
+                        <input type="radio" name="helpfulness">Very Helpful
+                    </label>
+                </div> <!-- .form-row-->
+                
+                <div class="form-row">
+                    <div class="left-col">
+                        How Can I Improve This Blog?
+                    </div> <!-- .left-col-->
+                    <label>
+                        <input type="checkbox" name="improvement">More Content
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improvement">Less Content
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improvement">Change Design
+                    </label>
+                </div> <!-- .form-row-->
+
+                <div class="form-row">
+                    <div class="left-col">
+                        What Other CS Topics Are You Intersted?
+                    </div>
+                    <label>
+                        <input type="text" placeholder="None/Tree/Dijkstra/...">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        Please Provide Your Email to Receive a Response: 
+                    </div>
+                    <label>
+                        <input type="text" placeholder="muyangye@usc.edu">
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-col">
+                        <label for="feedback">Any Additional Feedback?</label>
+                    </div> <!-- .left-col-->
+                    <textarea id="feedback"></textarea>
+                </div> <!-- .form-row-->
+
+                <button id="submit-button" type="submit">Submit</button>
+                <button id="reset-button" type="reset">Clear</button>
+                
+            </form>
+        </div>
+
+        <div id="footer">
+            Welcome to my blog Coding Made Easy! I will keep updating and introducing elementary data structures and algorithms to you. Hope it helps!
+        </div> <!-- #footer -->
+
+    </body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Muyang Ye | Form Page</title>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+            .form-row{
+                margin: 10px 0px;
+            }
+            .left-col{
+                width: 360px;
+                float: left;
+            }
+            #invisible{
+                color: #FFF;
+            }
+            button{
+                padding: 10px 20px;
+            }
+            form{
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Anonymous Undergraduate Study Habit Survey</h1>
+       
+        <form action="confirmation.html">
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    <label for="name">Current GPA:</label>
+                </div> <!-- .left-col-->
+
+                <input type="text" placeholder="4.00" id="name">
+
+            </div> <!-- .form-row-->
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    Current Level:
+                </div> <!-- .left-col-->
+
+                <label>
+                    <input type="radio" name="levels">
+                    Freshman
+                </label>
+
+                <label>
+                    <input type="radio" name="levels">
+                    Sophomore
+                </label>
+
+                <label>
+                    <input type="radio" name="levels">
+                    Junior
+                </label>
+
+                <label>
+                    <input type="radio" name="levels">
+                    Senior
+                </label>
+
+            </div> <!-- .form-row-->
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    Which Time Period(s) Do You Study The Most?
+                </div> <!-- .left-col-->
+
+                <label>
+                    <input type="checkbox">
+                    Morning
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Afternoon
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    Night
+                </label>
+
+            </div> <!-- .form-row-->
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    <label for="drinks">What Do You Like To Drink When Studying?
+                </div> <!-- .left-col-->
+
+                <select id="drinks">
+                    <option>Water</option>
+                    <option>Coffee</option>
+                    <option>Tea</option>
+                    <option>Others</option>
+                </select>
+
+            </div> <!-- .form-row-->
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    <label for="extra">Any Additional Study Habit:</label>
+                </div> <!-- .left-col-->
+
+                <textarea id="extra"></textarea>
+
+            </div> <!-- .form-row-->
+
+            <div class="form-row">
+
+                <div class="left-col">
+                    <span id="invisible">You Have Discovered The Hidden Content!</span>
+                </div> <!-- .left-col-->
+
+                <label>
+                    <input type="checkbox">
+                    I accept terms & conditions.
+                </label>
+                
+            </div> <!-- .form-row-->
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+
+    </body>
+
+</html>

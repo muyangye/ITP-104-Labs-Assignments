@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>CME-Data Structures</title>
+        <meta name="description" content="This page contains common and useful data structures. For now it only includes stack and queue. All data structures in this page have their member functions and applications briefly discussed. More data structures to come!">
+
+        <link href="main.css" rel="stylesheet">
+        <link href="content.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <style>
+            #stack{
+                margin-top: 80px;
+                margin-left: 10px;
+            }
+            #stack-functions{
+                float: left;
+                margin-right: 70px;
+            }
+            #stack-applications{
+                float: left;
+            }
+            #stack-applications li{
+                margin-bottom: 20px;
+            }
+            #queue{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            #queue-functions{
+                float: left;
+                margin-right: 70px;
+            }
+            #queue-applications{
+                float: left;
+            }
+            #queue-applications li{
+                margin-bottom: 20px;
+            }
+            .img-container{
+                display: none;
+                float: left;
+                margin-top: 30px;
+                font-size: 2em;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .show{
+                float: left;
+                margin-top: 50px;
+                color: #FFF;
+                background-color: gray;
+                font-size: 2em;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .hide{
+                position: absolute;
+                top: -10px;
+                left: 335px;
+                margin-right: auto;
+                margin-left: auto;
+                color: #F00;
+                font-size: 1.5em;
+                border: 1px dotted #000;
+                display: none;
+                cursor: pointer;
+            }
+            #queue-visualization .hide{
+                left: 500px;
+            }
+            #queue-visualization .img-container{
+                clear: left;
+                margin-left: 300px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="navbar">
+            <a id="name">Muyang Ye</a>
+            <a href="final_project_homepage.html">Home</a>
+            <a href="final_project_second_page.html" id="active-nav">Data Structures</a>
+            <a href="final_project_third_page.html">Algorithms</a>
+            <a href="final_project_fourth_page.html">Others</a>
+            <a href="final_project_contact_page.html">Contact</a>
+
+            <div class="clearfloat"></div> <!-- .clearfloat-->
+        </div> <!-- #navbar-->
+
+        <div id="stack">
+
+            <h2>Stack</h2>
+            <p>A stack is a linear data structure in which elements can be inserted and deleted only from one side of the list, called the top. A stack follows the LIFO (Last In First Out) principle, i.e., the element inserted at the last is the first element to come out. In stack we always keep track of the last element present in the list with a pointer called top.</p>
+            <img class="imgs" src="img/stack.png" alt="stack">
+
+            <div id="stack-functions">
+                <p><span>A stack should have the following functions:</span></p>
+                <ul>
+                    <li>push():
+                        <ul>
+                            <li>Insert a new element into stack</li>
+                            <li>O(1); returns nothing</li>
+                        </ul>
+                    </li>
+                    <li>pop():
+                        <ul>
+                            <li>Remove the element from the top of stack</li>
+                            <li>O(1); returns nothing</li>
+                        </ul>
+                    </li>
+                    <li>top():
+                        <ul>
+                            <li>Get the value of the top element</li>
+                            <li>O(1); returns a value</li>
+                        </ul>
+                    </li>
+                    <li>isEmpty():
+                        <ul>
+                            <li>Determine if there's still element(s) in stack</li>
+                            <li>O(1); returns a bool (true or false)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- #stack-functions-->
+
+            <div id="stack-applications">
+                <p><span>Applications:</span></p>
+                <ul>
+                    <li>Reverse a word: push every letter into stack, then pop them one by one</li>
+                    <li>"Undo" mechanism: keeping all text changes in a stack</li>
+                    <li>Depth-First Search: detailed description in Algorithms session</li>
+                </ul>
+            </div> <!-- stack-applications-->
+
+            <div id="stack-visualization">
+                <div class="show">Click here to visualize</div> <!-- .show-->
+                <div class="img-container">
+                    <div class="hide">X</div> <!-- .hide-->
+                    <img src="img/stack-visualization.gif" alt="stack-visualization">
+                </div>
+            </div> <!-- #stack-visualization-->
+
+        </div> <!-- #stack-->
+        <div class="clearfloat"></div> <!-- .clearfloat-->
+
+        <hr>
+
+        <div id="queue">
+
+            <h2>Queue</h2>
+            <p>A queue is a linear data structure in which elements can be inserted only from one side of the list called rear, and the elements can be deleted only from the other side called the front. The queue data structure follows the FIFO (First In First Out) principle, i.e. the element inserted at first in the list, is the first element to be removed from the list. In queue we always maintain two pointers, one pointing to the element which was inserted at the first and still present in the list with the front pointer and the second pointer pointing to the element inserted at the last with the rear pointer.</p>
+            <img class="imgs" src="img/queue.png" alt="queue">
+
+            <div id="queue-functions">
+                <p><span>A queue should have the following functions:</span></p>
+                <ul>
+                    <li>enqueue():
+                        <ul>
+                            <li>Insert a new element into the reae of queue</li>
+                            <li>O(1); returns nothing</li>
+                        </ul>
+                    </li>
+                    <li>dequeue():
+                        <ul>
+                            <li>Remove the element from the front of queue</li>
+                            <li>O(1); returns nothing</li>
+                        </ul>
+                    </li>
+                    <li>front():
+                        <ul>
+                            <li>Get the value of the front element</li>
+                            <li>O(1); returns a value</li>
+                        </ul>
+                    </li>
+                    <li>isEmpty():
+                        <ul>
+                            <li>Determine if there's still element(s) in queue</li>
+                            <li>O(1); returns a bool (true or false)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- #queue-functions-->
+
+            <div id="queue-applications">
+                <p><span>Applications:</span></p>
+                <ul>
+                    <li>Phone calls: call centers use queue to hold people calling</li>
+                    <li>OS: maintaing a queue of processes that are ready to execute</li>
+                    <li>Breadth-First Search: detailed description in Algorithms session</li>
+                </ul>
+            </div> <!-- queue-applications-->
+
+            <div id="queue-visualization">
+                <div class="show">Click here to visualize</div> <!-- .show-->
+                <div class="img-container">
+                    <div class="hide">X</div> <!-- .hide-->
+                    <img src="img/queue-visualization.gif" alt="queue-visualization">
+                </div>
+            </div> <!-- #queue-visualization-->
+
+        </div> <!-- #queue-->
+        <div class="clearfloat"></div> <!-- .clearfloat-->
+
+        <hr>
+
+        <h2>......</h2>
+
+        <div id="footer">
+            Welcome to my blog Coding Made Easy! I will keep updating and introducing elementary data structures and algorithms to you. Hope it helps!
+        </div> <!-- #footer -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $('#stack-visualization .show').click(function(){
+                $('#stack-visualization .img-container').css('display', 'block');
+                $('#stack-visualization .hide').css('display', 'block');
+            });
+            $('#stack-visualization .hide').click(function(){
+                $('#stack-visualization .img-container').css('display', 'none');
+                $('#stack-visualization .hide').css('display', 'none');
+            });
+            $('#queue-visualization .show').click(function(){
+                $('#queue-visualization .img-container').css('display', 'block');
+                $('#queue-visualization .hide').css('display', 'block');
+            });
+            $('#queue-visualization .hide').click(function(){
+                $('#queue-visualization .img-container').css('display', 'none');
+                $('#queue-visualization .hide').css('display', 'none');
+            });
+        </script>
+
+    </body>
+
+</html>
